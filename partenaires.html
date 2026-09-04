@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devenir partenaire — PLUG</title>
+  <meta name="description" content="Installe une borne Plug sur ton bar. Zéro coût. 30 % de chaque location.">
+  <link rel="stylesheet" href="css/broadsheet.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <nav class="nav" aria-label="Principale">
+    <a class="nav-brand" href="index.html">
+      <span class="mark" aria-hidden="true">
+        <span class="mark-pins"><span class="mark-pin"></span><span class="mark-pin"></span></span>
+        <span class="mark-body"><b>P</b></span>
+      </span>
+      <span>PLUG</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html#comment">Comment</a>
+      <a href="bornes.html">Bornes</a>
+      <a href="index.html#tarifs">Tarifs</a>
+      <a class="nav-cta is-active" href="partenaires.html">Devenir partenaire</a>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="wrap">
+      <span class="pill">Aux gérants</span>
+      <h1>Une borne sur ton bar. Zéro coût.</h1>
+      <p>Tu fournis une prise et 30 cm de comptoir. On fournit le reste — et tu touches une part de chaque location.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap partners">
+      <div>
+        <div class="stat-grid" style="margin-bottom:40px">
+          <div class="stat card-cyan"><strong style="color:var(--color-accent-700)">30 %</strong><span>de chaque location</span></div>
+          <div class="stat card-gray"><strong>0 $</strong><span>install & entretien</span></div>
+          <div class="stat card-pink"><strong style="color:var(--color-accent-2-700)">+22</strong><span>min sur place</span></div>
+        </div>
+        <div class="grid-2">
+          <article class="card card-sm card-gray">
+            <h3 class="title">Pas de contrat d'exclusivité</h3>
+            <p>Installation en dix minutes. On remplace les batteries et on gère le support.</p>
+          </article>
+          <article class="card card-sm card-gray">
+            <h3 class="title">Tes clients restent</h3>
+            <p>Plus besoin de chercher un chargeur — ils restent pour un autre round.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3>On passe cette semaine</h3>
+        <p>Laisse ton établissement. Réponse sous 24 h.</p>
+        <form id="partner-form">
+          <div class="field">
+            <label for="etablissement">Établissement</label>
+            <input id="etablissement" name="etablissement" type="text" placeholder="Le Troquet" required>
+          </div>
+          <div class="field">
+            <label for="telephone">Téléphone</label>
+            <input id="telephone" name="telephone" type="tel" placeholder="819 000 0000" required>
+          </div>
+          <div class="field">
+            <label for="email">Courriel</label>
+            <input id="email" name="email" type="email" placeholder="toi@bar.ca">
+          </div>
+          <div class="field">
+            <label>Ville</label>
+            <input type="hidden" name="ville" value="Gatineau">
+            <div class="city-toggle">
+              <button type="button" class="is-on" data-city="Gatineau">Gatineau</button>
+              <button type="button" data-city="Ottawa">Ottawa</button>
+            </div>
+          </div>
+          <button class="btn btn-dark btn-block" type="submit" style="margin-top:8px">Demander une borne</button>
+          <p class="form-note">Ouvre ton client courriel · allo@plug.ca</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-row">
+            <span class="mark mark--lg" aria-hidden="true">
+              <span class="mark-pins"><span class="mark-pin"></span><span class="mark-pin"></span></span>
+              <span class="mark-body"><b>P</b></span>
+            </span>
+            <span>PLUG</span>
+          </div>
+          <p class="tagline">Ton plug à batterie est au bar.</p>
+          <p class="contact">Gatineau–Ottawa · <a href="mailto:allo@plug.ca">allo@plug.ca</a></p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Le service</h4>
+            <a href="index.html#comment">Comment ça marche</a>
+            <a href="bornes.html">Où trouver une borne</a>
+            <a href="index.html#tarifs">Tarifs</a>
+          </div>
+          <div class="footer-col">
+            <h4>Les commerces</h4>
+            <a href="partenaires.html">Devenir partenaire</a>
+            <a href="mailto:allo@plug.ca">Nous écrire</a>
+          </div>
+          <div class="footer-col">
+            <h4>Légal</h4>
+            <a href="mentions.html">Mentions</a>
+            <a href="mentions.html#confidentialite">Confidentialité</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Plug. Gatineau–Ottawa.</span>
+        <span class="caps">Tarifs et adresses à confirmer</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+</body>
+</html>

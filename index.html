@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PLUG — Ton plug à batterie est au bar</title>
+  <meta name="description" content="Location de powerbanks dans les bars, clubs et restos de Gatineau–Ottawa. 2 $ l'heure, 12 $ max. Pas d'appli.">
+  <meta property="og:title" content="PLUG — Ton plug à batterie est au bar">
+  <meta property="og:description" content="Loue une powerbank en trente secondes. Rends-la à n'importe quelle borne.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/broadsheet.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <nav class="nav" aria-label="Principale">
+    <a class="nav-brand" href="index.html">
+      <span class="mark" aria-hidden="true">
+        <span class="mark-pins"><span class="mark-pin"></span><span class="mark-pin"></span></span>
+        <span class="mark-body"><b>P</b></span>
+      </span>
+      <span>PLUG</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <div class="nav-links" id="nav-links">
+      <a href="#comment">Comment</a>
+      <a href="bornes.html">Bornes</a>
+      <a href="#tarifs">Tarifs</a>
+      <a class="nav-cta" href="partenaires.html">Devenir partenaire</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-blob-a" aria-hidden="true"></div>
+    <div class="hero-blob-b" aria-hidden="true"></div>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="hero-brand">PLUG</p>
+        <h1>Ton plug à batterie est au bar.</h1>
+        <p>Loue une powerbank en trente secondes. Rends-la à n'importe quelle borne. Pas d'appli.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="bornes.html">Trouver une borne</a>
+          <a class="btn btn-ghost" href="partenaires.html">J'ai un bar</a>
+        </div>
+      </div>
+
+      <div class="station-wrap" aria-hidden="true">
+        <div class="station">
+          <div class="station-top">
+            <span class="mark mark--lg mark--on-light">
+              <span class="mark-pins"><span class="mark-pin"></span><span class="mark-pin"></span></span>
+              <span class="mark-body"><b>P</b></span>
+            </span>
+            <strong>PLUG</strong>
+          </div>
+          <div class="station-panel">
+            <span class="big">6 dispos</span>
+            <span class="price">2 $ l'heure · 12 $ max</span>
+            <span class="hint">Tape pour débloquer</span>
+          </div>
+          <div class="station-slots">
+            <div class="slot"><i></i></div>
+            <div class="slot"><i></i></div>
+            <div class="slot"><i></i></div>
+            <div class="slot is-empty"><i></i></div>
+            <div class="slot"><i></i></div>
+            <div class="slot"><i></i></div>
+          </div>
+          <span class="station-foot">Toute borne Plug</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="comment">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Trois gestes, trente secondes</h2>
+        <span class="en">Three taps, thirty seconds.</span>
+      </div>
+      <div class="grid-3">
+        <article class="card card-cyan">
+          <span class="num">01</span>
+          <h3>Tape sur la borne</h3>
+          <p>Carte ou téléphone. Aucun compte, aucun dépôt.</p>
+        </article>
+        <article class="card card-gray">
+          <span class="num">02</span>
+          <h3>Prends celle qui sort</h3>
+          <p>10 000 mAh, USB-C et Lightning intégrés.</p>
+        </article>
+        <article class="card card-pink">
+          <span class="num">03</span>
+          <h3>Rends-la à tout Plug</h3>
+          <p>Le bar d'après, l'autre rive — la facture s'arrête au retour.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="bornes">
+    <div class="wrap">
+      <div class="panel-dark">
+        <div>
+          <h2>14 bars branchés, et ça monte</h2>
+          <p>Promenade du Portage, Vieux-Hull, marché By, rue Elgin. Cherche la borne cyan sur le bar.</p>
+          <div class="tags">
+            <span class="tag is-on">Bars</span>
+            <span class="tag">Clubs</span>
+            <span class="tag">Restos</span>
+            <span class="tag">Festivals</span>
+          </div>
+          <p style="margin-top:28px">
+            <a class="btn btn-primary" href="bornes.html">Voir toutes les bornes</a>
+          </p>
+        </div>
+        <div class="station-list">
+          <div class="station-list-head"><span>Bornes actives</span><span>Dispos</span></div>
+          <div class="station-row">
+            <div><strong>Le Troquet</strong><small>Promenade du Portage, Gatineau</small></div>
+            <span class="avail">6</span>
+          </div>
+          <div class="station-row">
+            <div><strong>Le Minotaure</strong><small>Rue Montcalm, Gatineau</small></div>
+            <span class="avail">4</span>
+          </div>
+          <div class="station-row">
+            <div><strong>Bar Robinson</strong><small>Rue Elgin, Ottawa</small></div>
+            <span class="avail">5</span>
+          </div>
+          <div class="station-row">
+            <div><strong>Taverne du Marché</strong><small>Marché By, Ottawa</small></div>
+            <span class="avail is-full">0</span>
+          </div>
+          <p class="legend">Magenta = borne pleine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tarifs">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Un tarif, pas une grille</h2>
+        <span class="en">One rate. No surprises.</span>
+      </div>
+      <div class="grid-3">
+        <article class="card card-fill price-card">
+          <span class="amount">2 $</span>
+          <span class="label">par heure entamée</span>
+          <p>Première demi-heure offerte si tu rends tout de suite.</p>
+        </article>
+        <article class="card card-gray price-card">
+          <span class="amount">12 $</span>
+          <span class="label">plafond par 24 h</span>
+          <p>Au-delà, tu ne paies plus rien.</p>
+        </article>
+        <article class="card card-gray price-card">
+          <span class="amount">0 $</span>
+          <span class="label">dépôt, appli, abo</span>
+          <p>Rien de bloqué. Reçu par texto.</p>
+        </article>
+      </div>
+      <div class="banner-pink">
+        <strong>Pas rendue après 72 h ? 39 $ — et elle est à toi.</strong>
+        <span>Not returned after 72 h? Yours for $39.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="partenaires">
+    <div class="wrap partners">
+      <div>
+        <span class="pill">Aux gérants</span>
+        <h2>Une borne sur ton bar. Zéro coût.</h2>
+        <p>Une prise murale et 30 cm de comptoir. On apporte la borne, les batteries et l'entretien. Tu touches une part de chaque location.</p>
+        <div class="stat-grid">
+          <div class="stat card-cyan"><strong style="color:var(--color-accent-700)">30 %</strong><span>de chaque location</span></div>
+          <div class="stat card-gray"><strong>0 $</strong><span>install & entretien</span></div>
+          <div class="stat card-pink"><strong style="color:var(--color-accent-2-700)">+22</strong><span>min sur place</span></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <h3>On passe cette semaine</h3>
+        <p>Laisse ton établissement. Réponse sous 24 h.</p>
+        <form id="partner-form">
+          <div class="field">
+            <label for="etablissement">Établissement</label>
+            <input id="etablissement" name="etablissement" type="text" placeholder="Le Troquet" required>
+          </div>
+          <div class="field">
+            <label for="telephone">Téléphone</label>
+            <input id="telephone" name="telephone" type="tel" placeholder="819 000 0000" required>
+          </div>
+          <div class="field">
+            <label>Ville</label>
+            <input type="hidden" name="ville" value="Gatineau">
+            <div class="city-toggle">
+              <button type="button" class="is-on" data-city="Gatineau">Gatineau</button>
+              <button type="button" data-city="Ottawa">Ottawa</button>
+            </div>
+          </div>
+          <button class="btn btn-dark btn-block" type="submit" style="margin-top:8px">Demander une borne</button>
+          <p class="form-note">Réponse sous 24 h · answer within 24 h</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Questions qu'on nous pose au bar</h2>
+      </div>
+      <div class="grid-2">
+        <article class="card card-sm card-gray">
+          <h3 class="title">Ça marche avec mon téléphone ?</h3>
+          <p>USB-C et Lightning intégrés. Micro-USB sur demande au staff.</p>
+        </article>
+        <article class="card card-sm card-gray">
+          <h3 class="title">Je dois télécharger une appli ?</h3>
+          <p>Non. Tu tapes ta carte, c'est parti. Reçu par texto.</p>
+        </article>
+        <article class="card card-sm card-gray">
+          <h3 class="title">Et si le bar est fermé ?</h3>
+          <p>Rends-la à une autre borne Plug, sur les deux rives.</p>
+        </article>
+        <article class="card card-sm card-gray">
+          <h3 class="title">Combien de charges ?</h3>
+          <p>10 000 mAh — environ deux charges complètes.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-row">
+            <span class="mark mark--lg" aria-hidden="true">
+              <span class="mark-pins"><span class="mark-pin"></span><span class="mark-pin"></span></span>
+              <span class="mark-body"><b>P</b></span>
+            </span>
+            <span>PLUG</span>
+          </div>
+          <p class="tagline">Ton plug à batterie est au bar.</p>
+          <p class="contact">Gatineau–Ottawa · <a href="mailto:allo@plug.ca">allo@plug.ca</a></p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Le service</h4>
+            <a href="#comment">Comment ça marche</a>
+            <a href="bornes.html">Où trouver une borne</a>
+            <a href="#tarifs">Tarifs</a>
+          </div>
+          <div class="footer-col">
+            <h4>Les commerces</h4>
+            <a href="partenaires.html">Devenir partenaire</a>
+            <a href="mailto:allo@plug.ca">Nous écrire</a>
+          </div>
+          <div class="footer-col">
+            <h4>Légal</h4>
+            <a href="mentions.html">Mentions</a>
+            <a href="mentions.html#confidentialite">Confidentialité</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Plug. Gatineau–Ottawa.</span>
+        <span class="caps">Tarifs et adresses à confirmer</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+</body>
+</html>

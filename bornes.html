@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bornes — PLUG Gatineau–Ottawa</title>
+  <meta name="description" content="Trouve une borne Plug près de toi. Bars, clubs et restos à Gatineau et Ottawa.">
+  <link rel="stylesheet" href="css/broadsheet.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <nav class="nav" aria-label="Principale">
+    <a class="nav-brand" href="index.html">
+      <span class="mark" aria-hidden="true">
+        <span class="mark-pins"><span class="mark-pin"></span><span class="mark-pin"></span></span>
+        <span class="mark-body"><b>P</b></span>
+      </span>
+      <span>PLUG</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html#comment">Comment</a>
+      <a class="is-active" href="bornes.html">Bornes</a>
+      <a href="index.html#tarifs">Tarifs</a>
+      <a class="nav-cta" href="partenaires.html">Devenir partenaire</a>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="wrap">
+      <span class="pill" style="background:var(--color-text)">Gatineau · Ottawa</span>
+      <h1>Où trouver une borne</h1>
+      <p>Cherche la borne cyan sur le bar. Filtre par type, check les dispos, et tape.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="panel-dark">
+        <div>
+          <h2>Bornes actives</h2>
+          <p>Liste mise à jour manuellement pour la maquette. Les disponibilités réelles suivront.</p>
+          <div class="tags" role="group" aria-label="Filtrer par type">
+            <button type="button" class="tag is-on" data-filter="all">Tous</button>
+            <button type="button" class="tag" data-filter="bar">Bars</button>
+            <button type="button" class="tag" data-filter="club">Clubs</button>
+            <button type="button" class="tag" data-filter="resto">Restos</button>
+            <button type="button" class="tag" data-filter="festival">Festivals</button>
+          </div>
+        </div>
+        <div class="station-list" id="station-list">
+          <div class="station-list-head"><span>Lieu</span><span>Dispos</span></div>
+          <div class="station-row" data-type="bar">
+            <div><strong>Le Troquet</strong><small>Promenade du Portage, Gatineau</small></div>
+            <span class="avail">6</span>
+          </div>
+          <div class="station-row" data-type="bar">
+            <div><strong>Le Minotaure</strong><small>Rue Montcalm, Gatineau</small></div>
+            <span class="avail">4</span>
+          </div>
+          <div class="station-row" data-type="bar">
+            <div><strong>Bar Robinson</strong><small>Rue Elgin, Ottawa</small></div>
+            <span class="avail">5</span>
+          </div>
+          <div class="station-row" data-type="resto">
+            <div><strong>Taverne du Marché</strong><small>Marché By, Ottawa</small></div>
+            <span class="avail is-full">0</span>
+          </div>
+          <div class="station-row" data-type="club">
+            <div><strong>Club Babylon</strong><small>Rue Bank, Ottawa</small></div>
+            <span class="avail">3</span>
+          </div>
+          <div class="station-row" data-type="resto">
+            <div><strong>Café Lamoureux</strong><small>Rue Wellington, Gatineau</small></div>
+            <span class="avail">2</span>
+          </div>
+          <div class="station-row" data-type="festival">
+            <div><strong>Scène Portage</strong><small>Événements · Gatineau</small></div>
+            <span class="avail">8</span>
+          </div>
+          <p class="legend">Magenta = borne pleine, rien à prendre pour l'instant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-row">
+            <span class="mark mark--lg" aria-hidden="true">
+              <span class="mark-pins"><span class="mark-pin"></span><span class="mark-pin"></span></span>
+              <span class="mark-body"><b>P</b></span>
+            </span>
+            <span>PLUG</span>
+          </div>
+          <p class="tagline">Ton plug à batterie est au bar.</p>
+          <p class="contact">Gatineau–Ottawa · <a href="mailto:allo@plug.ca">allo@plug.ca</a></p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Le service</h4>
+            <a href="index.html#comment">Comment ça marche</a>
+            <a href="bornes.html">Où trouver une borne</a>
+            <a href="index.html#tarifs">Tarifs</a>
+          </div>
+          <div class="footer-col">
+            <h4>Les commerces</h4>
+            <a href="partenaires.html">Devenir partenaire</a>
+            <a href="mailto:allo@plug.ca">Nous écrire</a>
+          </div>
+          <div class="footer-col">
+            <h4>Légal</h4>
+            <a href="mentions.html">Mentions</a>
+            <a href="mentions.html#confidentialite">Confidentialité</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Plug. Gatineau–Ottawa.</span>
+        <span class="caps">Tarifs et adresses à confirmer</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+</body>
+</html>
