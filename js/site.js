@@ -1,11 +1,36 @@
 (() => {
   const nav = document.querySelector(".nav");
   const toggle = document.querySelector(".nav-toggle");
+
+  if (nav) {
+    const onScroll = () => nav.classList.toggle("is-scrolled", window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
+
   if (nav && toggle) {
     toggle.addEventListener("click", () => {
       const open = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
+  }
+
+  const revealEls = document.querySelectorAll(".reveal");
+  if (revealEls.length && "IntersectionObserver" in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-in");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
+    );
+    revealEls.forEach((el) => io.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add("is-in"));
   }
 
   document.querySelectorAll(".city-toggle").forEach((group) => {
@@ -27,9 +52,10 @@
       const etablissement = String(data.get("etablissement") || "").trim();
       const telephone = String(data.get("telephone") || "").trim();
       const ville = String(data.get("ville") || "Gatineau").trim();
+      const email = String(data.get("email") || "").trim();
       const subject = encodeURIComponent(`Demande de borne — ${etablissement || "nouveau partenaire"}`);
       const body = encodeURIComponent(
-        `Établissement : ${etablissement}\nTéléphone : ${telephone}\nVille : ${ville}\n\nMessage : On voudrait une borne Plug.`
+        `Établissement : ${etablissement}\nTéléphone : ${telephone}\nCourriel : ${email}\nVille : ${ville}\n\nMessage : On voudrait une borne Plug.`
       );
       window.location.href = `mailto:allo@plug.ca?subject=${subject}&body=${body}`;
     });
